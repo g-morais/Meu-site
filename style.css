@@ -1,0 +1,279 @@
+/* esse * muda todo o estilo do site, aqui eu defini o tipo da fonte */
+/* estilo geral */
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh; 
+    
+}
+/* estilização do botão, "btn é de botão" */
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600px;
+    background-color: #255acc;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    }
+    /* sombra ao dar zoom */
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+    transform: scale(1.05);
+}
+/* isso da o espaçamento da borda */
+.interface{
+   max-width: 1280px;
+   margin: 0 auto;
+
+}
+.flex{
+    display: flex;
+}
+h2.titulo{
+    color: white;
+    font: 40px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #255acc;
+    
+}
+/* estilo do cabeçalho */
+header{
+    padding: 40px;
+
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* muda a cor e tira o sublinhado dos links, além de delimitar o tempo da transição*/
+header a{
+    color: rgb(100, 97, 97);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+/* ao passar o mouse em cima ele vai pra essa cor e da o zoom */
+header a:hover{
+    color: #FFFF;
+    transform: scale(1.20);
+}
+/* zoom da LOGO */
+header .logo:hover{
+    transform: scale(2);
+    transition: .3s;
+}
+header nav ul{
+    list-style: none;
+}
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site  .flex{
+    align-items: center;
+    justify-content: center;
+
+}
+/* estilização do texto do topo */
+.topo-do-site .txt-topo-site h1{
+color: white;
+font-size: 60px;
+
+}
+
+.topo-do-site .txt-topo-site h2{
+    color: #255acc;
+    font-size: 40px;
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #255acc;
+}
+/* estilização das habilidades */
+section.habilidades{
+    padding: 40px 4%;
+}
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box {
+    color: white;
+    padding: 40px;
+    border: 0px solid #ffffff;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+/* transição e sombreamento da box */
+.habilidades .habilidades-box:hover{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.384);
+    transform: scale(1.05);
+    transition: .2s;
+
+}
+
+.habilidades .habilidades-box i{
+    font-size: 70px;
+    color: #255acc;
+}
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/* sobre estilo */
+section.sobre{
+padding: 80px 4%;
+}
+.img-sobre img{
+    border-radius: 50px;
+    padding: 20px;
+    width: 450px;
+}
+.txt-sobre{
+    color: white;
+}
+.txt-sobre span{
+    color: #255acc;
+    display: block;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.txt-sobre h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.sobre .txt-sobre p{
+    font-size: 20px;
+    text-align: justify;
+}
+.btn-social button{
+    width: 180px;
+    height: 180px;
+    font-size: 90px;
+    border-radius: 20px;
+    border: none;
+    background-color: #255acc;
+    cursor: pointer;
+    margin: 100px 25px;
+    margin-bottom: 250px;
+}
+.txt-contato h2{
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.txt-contato span{
+    color: #255acc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+     /* Define a altura total da janela como a altura do container */
+}
+
+.btn-social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white;
+}
+/* estilo do portifolio */
+.titulo-interface{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.titulo-interface span{
+    color: #255acc;
+}
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgb(87, 85, 85);
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #255acc;
+    background-size: 500px;
+    background-position: 400% 0;
+    border-radius: 80px;
+    margin-top: 40px;
+    position: relative;
+}
+.img-port:hover{
+    transition: 4s;
+    background-position: 755% 0;
+    box-shadow: 0px 0px 8px 2px white;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #255acc3b;
+    border-radius: 80px;
+    font-size: 24px;
+    font-weight: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    opacity: 0;
+}
+.overlay:hover{
+opacity: 1;
+transition: .5s;
+}
+/* estilo do rodapé */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgb(87, 85, 85);
+}
+footer .line-footer p i{
+color: #255acc;
+font-size: 20px;
+}
+footer .line-footer p a{
+    color: white;
+}
+footer .line-footer{
+    margin: 40px 0;
+}
+.borda{
+    border-bottom: 2px solid #255acc;
+}
+.line-footer span{
+    color: #255acc;
+    margin-left: 610px;
+}
+span1{
+    color: white;
+}
